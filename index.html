@@ -58,7 +58,7 @@
         }
 
         [data-theme="light"] header {
-            background: rgba(255, 255, 255, 0.95);
+            background: rgba(255, 255, 201, 0.95);
             box-shadow: 0 4px 20px var(--current-shadow);
         }
 
@@ -284,7 +284,7 @@
             border-radius: 8px;
             border: 1px solid #444;
             background: #333;
-            color: white;
+            color: var(--current-text);
             font-size: 1rem;
             cursor: pointer;
             appearance: none;
@@ -301,9 +301,19 @@
 
         [data-theme="light"] .language-select {
             background: #fff;
-            color: var(--dark);
+            color: var(--current-text);
             border: 1px solid #ccc;
             background-image: url('data:image/svg+xml;utf8,<svg fill="black" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/></svg>');
+        }
+
+        .language-select option {
+            color: #202124;
+            background: #fff;
+        }
+
+        [data-theme="dark"] .language-select option {
+            color: white;
+            background: #333;
         }
 
         .language-select:hover {
